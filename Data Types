@@ -10,6 +10,7 @@ fun main(args: Array<String>) {
    val char: Char ='A'
    var rawString :String  = "I am Raw String!"
    val escapedString : String  = "I am escaped String!\n"
+    var programmer :Human = object:Human 
    
    println("Your Int Value is "+a);
    println("Your Double  Value is "+d);
