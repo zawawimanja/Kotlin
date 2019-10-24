@@ -1,0 +1,37 @@
+//using open
+
+import java.util.Arrays
+
+open class ABC {
+   fun think () {
+      print("Hey!! i am thiking ")
+   }
+}
+class BCD: ABC(){ // inheritence happend using default constructor 
+}
+
+fun main(args: Array<String>) {
+   var  a = BCD()
+   a.think()
+}
+
+
+//override
+
+
+import java.util.Arrays
+
+open class ABC {
+   open fun think () {
+      print("Hey!! i am thinking ")
+   }
+}
+class BCD: ABC() { // inheritance happens using default constructor 
+   override fun think() {
+      print("I Am from Child")
+   }
+}
+fun main(args: Array<String>) {
+   var  a = BCD()
+   a.think()
+}
