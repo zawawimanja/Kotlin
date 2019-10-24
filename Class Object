@@ -1,0 +1,63 @@
+//not using new
+
+class myClass {
+   // property (data member)
+   private var name: String = "Tutorials.point"
+   
+   // member function
+   fun printMe() {
+      print("You are at the best Learning website Named-"+name)
+   }
+}
+fun main(args: Array<String>) {
+   val obj = myClass() // create obj object of myClass class
+   obj.printMe()
+}
+
+
+//nested class 
+//dont need to create outer class object
+
+class myClass {
+   // property (data member)
+   private var name: String = "Tutorials.point"
+   
+   // member function
+   fun printMe() {
+      print("You are at the best Learning website Named-"+name)
+   }
+}
+fun main(args: Array<String>) {
+   val obj = myClass() // create obj object of myClass class
+   obj.printMe()
+}
+
+
+
+//inner class
+fun main(args: Array<String>) {
+   val demo = Outer().Nested().foo() // calling nested class method
+   print(demo)
+}
+class Outer {
+   private val welcomeMessage: String = "Welcome to the TutorialsPoint.com"
+   inner class Nested {
+      fun foo() = welcomeMessage
+   }
+}
+
+
+
+//Anonymous Inner Class
+
+fun main(args: Array<String>) {
+   var programmer :Human = object:Human // creating an instance of the interface {
+      override fun think() { // overriding the think method
+         print("I am an example of Anonymous Inner Class ")
+      }
+   }
+   programmer.think()
+}
+interface Human {
+   fun think()
+}
