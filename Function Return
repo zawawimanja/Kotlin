@@ -1,0 +1,31 @@
+
+//fun <nameOfFunction>(<argument>:<argumentType>):<ReturnType>
+ //argument function 
+ //return type
+ 
+
+
+fun main(args: Array<String>) {
+   println(MyFunction("tutorialsPoint.com"))
+}
+
+
+ 
+fun MyFunction(x: String): String {
+   var c:String  = "Hey!! Welcome To ---"
+   return (c+x)
+}
+
+////////////////////////////////////
+
+void
+
+
+fun main(args: Array<String>) { 
+     
+     MyFunction()
+
+} 
+fun MyFunction(){ 
+     println("tutorialsPoint.com") 
+}
