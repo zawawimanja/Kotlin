@@ -1,0 +1,36 @@
+
+
+//for 
+fun main(args: Array<String>) { 
+    val items = listOf(1, 2, 3, 4) 
+    for (i in items) println("values of the array"+i) 
+    
+    
+    val letter=listOf("A","B","C")
+    for( t in letter)println("letter"+t)
+}
+
+
+//while
+
+fun main(args: Array<String>) {
+   var x:Int = 0
+   println("Example of While Loop--")
+   
+   while(x< = 10) {
+      println(x)
+      x++
+   } 
+}
+
+//do while
+rray<String>) {
+   var x:Int = 0
+   do {
+      x = x + 10
+      println("I am inside Do block---"+x)
+   } while(x <= 50)
+}
+
+
+
